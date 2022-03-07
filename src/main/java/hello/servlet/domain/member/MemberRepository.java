@@ -1,4 +1,4 @@
-package hello.sevlet.domain.member;
+package hello.servlet.domain.member;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -29,7 +29,7 @@ public class MemberRepository
             return store.get(id);
         }
 
-        public List<Member> findeAll(){
+        public List<Member> findAll(){
             return new ArrayList<>(store.values());
         }
 

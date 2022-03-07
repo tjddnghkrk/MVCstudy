@@ -1,8 +1,8 @@
-package hello.sevlet.web.servlet;
+package hello.servlet.web.servlet;
 
 
-import hello.sevlet.domain.member.Member;
-import hello.sevlet.domain.member.MemberRepository;
+import hello.servlet.domain.member.Member;
+import hello.servlet.domain.member.MemberRepository;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -20,7 +20,8 @@ public class MemberListServlet extends HttpServlet {
 
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        List<Member> members = memberRepository.findeAll();
+        List<Member> members = memberRepository.findAll();
+
 
         response.setContentType("text/html");
         response.setCharacterEncoding("utf-8");
