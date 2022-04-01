@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "mvcMemberSaveServlet", urlPatterns = "/servlet/members/save")
+@WebServlet(name = "mvcMemberSaveServlet", urlPatterns = "/servlet-mvc/members/save")
 public class MvcMemberSaveServlet extends HttpServlet {
 
     private MemberRepository memberRepository = MemberRepository.getInstance();
@@ -29,7 +29,7 @@ public class MvcMemberSaveServlet extends HttpServlet {
 
         request.setAttribute("member", member); //request에 저장 공간이 있다.
 
-        String viewPath = "/WEB-INF/views/save-result.jsp";
+        String viewPath = "/WEB_INF/views/save-result.jsp";
 
         RequestDispatcher dispatcher = request.getRequestDispatcher(viewPath);
         dispatcher.forward(request, response);

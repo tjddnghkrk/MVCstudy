@@ -17,6 +17,7 @@
   username: <input type="text" name="username" />
   age: <input type="text" name="age" />
   <button type="submit">전송</button>
+  <p> 여기 맞아요 </p>
 </form>
 </body>
 </html>
