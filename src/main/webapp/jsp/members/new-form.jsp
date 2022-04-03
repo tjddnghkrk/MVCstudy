@@ -12,6 +12,6 @@
   age: <input type="text" name="age" />
   <button type="submit">전송</button>
 </form>
-
+여기 맞는디요
 </body>
 </html>
